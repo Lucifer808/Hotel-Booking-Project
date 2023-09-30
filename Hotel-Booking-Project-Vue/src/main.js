@@ -16,7 +16,6 @@ import {registerPlugins} from '@/plugins'
 const app = createApp(App)
 
 Object.keys(components).forEach(componentName => {
-  console.log("1", componentName)
   app.component(componentName, components[componentName])
 })
 registerPlugins(app)
