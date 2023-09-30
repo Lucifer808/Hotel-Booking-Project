@@ -1,5 +1,4 @@
 <script setup>
-console.log("Asd")
 </script>
 
 <template>
