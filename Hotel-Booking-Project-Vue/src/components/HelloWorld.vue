@@ -36,7 +36,7 @@
           >
             <v-icon icon="mdi-speedometer" size="large" start />
 
-            Get Started
+            Get Started Long
           </v-btn>
         </v-col>
 
