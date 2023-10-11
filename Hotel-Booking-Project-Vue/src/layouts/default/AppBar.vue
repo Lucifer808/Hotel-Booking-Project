@@ -4,8 +4,8 @@
       <p href="#">LOGO</p>
     </div>
     <ul>
-      <li><a href="#">About
-        <v-icon>mdi-menu-down</v-icon>
+      <li><a href="#">Abouts
+        <v-icon style="height: 10px">mdi-menu-down</v-icon>
       </a>
       </li>
       <li><a href="#">Portfolio</a></li>
@@ -17,7 +17,7 @@
 
 <script setup>
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .app-bar-container {
   display: flex;
   justify-content: space-around;
@@ -27,6 +27,9 @@
   position: relative;
   box-sizing: border-box;
   box-shadow: 0px 8px 10px #ccc;
+  font-size: 14px;
+  font-weight: 600;
+  color: $base-color;
 }
 
 .logo-custom-style {

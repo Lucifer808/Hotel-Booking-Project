@@ -50,4 +50,12 @@ export default defineConfig({
       usePolling: true,
     }
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData:
+          '@import "./src/styles/_variables.scss";'
+      }
+    }
+  }
 })
