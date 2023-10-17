@@ -4,13 +4,27 @@
       <p href="#">LOGO</p>
     </div>
     <ul>
-      <li><a href="#">Abouts
-        <v-icon style="height: 10px">mdi-menu-down</v-icon>
-      </a>
+      <li><a class="nav-bar-item" href="#">Trang Chủ</a>
       </li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
+      <li>
+        <div class="dropdown">
+          <a class="nav-bar-item"
+             href="#">Phòng
+            <v-icon style="height: 10px">mdi-menu-down</v-icon>
+          </a>
+          <div class="dropdown-content">
+            <a href="billing">M Hotel Phu Quoc</a>
+            <a href="settings">Settings</a>
+            <a href="logout">Logout 3</a>
+          </div>
+        </div>
+      </li>
+      <li><a class="nav-bar-item" href="#">Giới Thiệu</a></li>
+      <li><a class="nav-bar-item" href="#">Liên Hệ</a></li>
+    </ul>
+    <ul>
+      <li><a class="nav-bar-item" href="#">Đăng Ký</a></li>
+      <li><a class="nav-bar-item" href="#">Đăng Nhập</a></li>
     </ul>
   </div>
 </template>
@@ -19,17 +33,20 @@
 </script>
 <style lang="scss" scoped>
 .app-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-around;
   width: 100%;
   background-color: #fff;
   align-items: center;
-  position: relative;
   box-sizing: border-box;
-  box-shadow: 0px 8px 10px #ccc;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 500;
   color: $base-color;
+  z-index: 9999;
+  padding: 0.2em 0;
 }
 
 .logo-custom-style {
@@ -48,7 +65,7 @@ li {
   position: relative;
 }
 
-a {
+.nav-bar-item {
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
@@ -59,8 +76,7 @@ a {
   position: relative;
 }
 
-a:after {
-  background: none repeat scroll 0 0 transparent;
+.nav-bar-item:after {
   bottom: 0;
   content: "";
   display: block;
@@ -72,14 +88,41 @@ a:after {
   width: 0;
 }
 
-a:hover:after {
+.nav-bar-item:hover:after {
   width: 100%;
   left: 0;
 }
 
-@media screen and (max-height: 300px) {
-  ul {
-    margin-top: 40px;
-  }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #4d1c33;
 }
 </style>

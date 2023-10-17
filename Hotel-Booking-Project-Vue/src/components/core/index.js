@@ -1,7 +1,13 @@
-import ANavBar from "@/components/core/ANavBar.vue"
-import ATable from "@/components/core/ATable.vue"
+import ANavBar from "@/components/core/ANavBar"
+import ATable from "@/components/core/ATable"
+import ACarousel from "@/components/core/ACarousel";
+import ASearchBar from "@/components/core/ASearchBar";
+import ADateRange from "@/components/core/ADateRange";
 
 export default {
   ANavBar,
-  ATable
+  ATable,
+  ACarousel,
+  ASearchBar,
+  ADateRange
 }
