@@ -64,7 +64,7 @@
 .search-bar-container {
   font-family: "raleway", sans-serif;
   position: absolute;
-  top: 75%;
+  top: 45%;
   left: 50%;
   width: 80%;
   height: 8rem;

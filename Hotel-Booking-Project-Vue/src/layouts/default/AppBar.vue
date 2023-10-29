@@ -1,7 +1,7 @@
 <template>
   <div class="app-bar-container">
-    <div class="logo-custom-style">
-      <p href="#">LOGO</p>
+    <div>
+      <img class="logo-customize" src="../../assets/images/minh_loan_hotel.jpg"/>
     </div>
     <ul>
       <li><a class="nav-bar-item" href="#">Trang Chủ</a>
@@ -46,11 +46,8 @@
   font-weight: 500;
   color: $base-color;
   z-index: 9999;
-  padding: 0.2em 0;
-}
-
-.logo-custom-style {
-  padding: 15px 20px;
+  padding: 0.1em 0;
+  border-bottom: 1px solid #ccc;
 }
 
 ul {
@@ -70,7 +67,6 @@ li {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-
   display: inline-block;
   padding: 15px 20px;
   position: relative;
@@ -124,5 +120,10 @@ li {
 
 .dropdown:hover .dropbtn {
   background-color: #4d1c33;
+}
+
+.logo-customize {
+  width: 40px;
+  height: 40px;
 }
 </style>

@@ -2,8 +2,12 @@
   <div>
     <v-app>
       <default-bar/>
-      <a-carousel/>
-      <a-search-bar/>
+      <a-carousel>
+        <template v-slot:search-bar>
+          <a-search-bar/>
+        </template>
+      </a-carousel>
+      <accommodation/>
       <default-view/>
     </v-app>
   </div>
@@ -12,6 +16,6 @@
 <script setup>
 import DefaultBar from './AppBar.vue'
 import DefaultView from './View.vue'
-import ACarousel from "@/components/core/ACarousel.vue";
-import ASearchBar from "@/components/core/ASearchBar.vue";
+import Accommodation from "./Accommodation.vue";
+import AFooter from "@/components/core/AFooter.vue";
 </script>
