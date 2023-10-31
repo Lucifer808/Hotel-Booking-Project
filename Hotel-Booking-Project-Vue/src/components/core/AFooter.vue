@@ -50,10 +50,13 @@
 
 <style scoped>
 .footer-wrapper {
+  margin-top: 4rem;
+  bottom: 0;
   width: 100%;
   height: 100%;
   background-color: #000000;
   color: #ffffff;
+  z-index: 1;
 }
 
 .footer-content-top {

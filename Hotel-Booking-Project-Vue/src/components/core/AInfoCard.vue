@@ -28,12 +28,12 @@
 .accommodation-info {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
 
 .accommodation-info-image {
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
 
 .accommodation-info-right {

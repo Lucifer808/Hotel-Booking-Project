@@ -1,5 +1,6 @@
 <template>
   <div class="a-carousel-container">
+    <slot name="search-bar"></slot>
     <swiper
       :spaceBetween="0"
       :centeredSlides="true"
@@ -31,7 +32,6 @@
         <img src="@/assets/images/bn4.jpg">
       </swiper-slide>
     </swiper>
-    <slot name="search-bar"></slot>
   </div>
 </template>
 <script>
@@ -62,6 +62,7 @@ export default {
 </script>
 <style>
 .a-carousel-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,7 +91,7 @@ export default {
   flex-direction: column;
   font-family: "Nunito", sans-serif;
   color: #fff;
-  z-index: 5;
+  z-index: 10;
 }
 
 .carousel-content-title {

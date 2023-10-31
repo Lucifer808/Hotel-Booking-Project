@@ -64,7 +64,7 @@
 .search-bar-container {
   font-family: "raleway", sans-serif;
   position: absolute;
-  top: 45%;
+  top: 95%;
   left: 50%;
   width: 80%;
   height: 8rem;
@@ -74,6 +74,6 @@
   font-weight: 200;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
-  z-index: 99;
+  z-index: 999;
 }
 </style>

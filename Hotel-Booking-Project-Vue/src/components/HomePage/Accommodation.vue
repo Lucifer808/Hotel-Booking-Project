@@ -21,7 +21,6 @@
         introduces guests with
         endless view of the entire surrounding
       </p>
-
     </div>
     <div class="accommodation-parallax-wrapper">
       <swiper
@@ -72,7 +71,9 @@
                 make you feel comfortable without infringing on the room. The La Petite rooms all have double beds for
                 an excellent night’s […]
               </p>
-              <div><a class="click-btn btn-style903" href="#">Tìm hiểu thêm</a></div>
+              <div>
+                <router-link class="click-btn btn-style903" to="/accommodation">Tìm hiểu thêm</router-link>
+              </div>
             </div>
           </div>
         </swiper-slide
@@ -204,10 +205,6 @@
     <div class="accommodation-info-wrapper">
       <a-info-card/>
     </div>
-    <div class="accommodation-wrapper">
-      <a-footer/>
-
-    </div>
   </div>
 </template>
 <script>
@@ -228,7 +225,6 @@ import AFooter from "@/components/core/AFooter.vue";
 
 export default {
   components: {
-    AFooter,
     AInfoCard,
     ASocialCarousel,
     Swiper,
@@ -243,8 +239,8 @@ export default {
 </script>
 <style scoped>
 .accommodation-container {
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: auto;
 }
 
 .accommodation-interview {
@@ -389,7 +385,7 @@ export default {
 }
 
 .accommodation-view {
-  height: 100%;
+  height: 800px;
   width: 100%;
   top: 0;
   left: 0;
@@ -550,7 +546,7 @@ export default {
 .accommodation-info-wrapper {
   margin: 4rem 0;
   width: 100%;
-  height: 50%;
+  height: 400px;
   background-color: #595858;
 }
 
