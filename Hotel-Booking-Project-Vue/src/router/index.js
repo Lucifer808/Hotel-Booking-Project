@@ -7,7 +7,11 @@ const routes = [
     component: () => import('@/views/Home.vue'),
   },
   {
-    path: '/accommodation',
+    path: '/room-detail',
+    component: () => import('@/views/RoomDetails.vue')
+  },
+  {
+    path: '/room-booking',
     component: () => import('@/views/RoomBooking.vue')
   }
 ]

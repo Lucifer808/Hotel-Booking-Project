@@ -72,7 +72,7 @@
                 an excellent night’s […]
               </p>
               <div>
-                <router-link class="click-btn btn-style903" to="/accommodation">Tìm hiểu thêm</router-link>
+                <router-link class="click-btn btn-style903" to="/room-detail">Tìm hiểu thêm</router-link>
               </div>
             </div>
           </div>
