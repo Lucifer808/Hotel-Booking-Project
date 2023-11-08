@@ -6,6 +6,7 @@ import ADateRange from "@/components/core/ADateRange";
 import ASocialCarousel from "@/components/core/ASocialCarousel";
 import AInfoCard from "@/components/core/AInfoCard";
 import AFooter from "@/components/core/AFooter";
+import AStepper from "@/components/core/AStepper";
 
 export default {
   ANavBar,
@@ -15,5 +16,6 @@ export default {
   ADateRange,
   ASocialCarousel,
   AInfoCard,
-  AFooter
+  AFooter,
+  AStepper
 }

@@ -49,7 +49,9 @@ Above our La Petite room is our Double Deluxe Suite, perfect for couples who wis
             <li>Access to Spa and Gym</li>
           </ul>
         </div>
-        <button class="room-more-info-right-btn">Book Now</button>
+        <router-link to="/room-booking">
+          <button class="room-more-info-right-btn">Book Now</button>
+        </router-link>
         <div class="room-more-info-right-special-offer-wrapper">
           <h4>Special Offers</h4>
         </div>
