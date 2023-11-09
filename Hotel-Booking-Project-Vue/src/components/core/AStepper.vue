@@ -18,7 +18,7 @@ let activeStep = computed(() => {
 </script>
 
 <template>
-  <v-stepper v-model="activeStep">
+  <v-stepper class="elevation-0" v-model="activeStep">
     <v-stepper-header class="elevation-0">
       <template :key="index" v-for="(menu, index) in menus">
         <v-stepper-item

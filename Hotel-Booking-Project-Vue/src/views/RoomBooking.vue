@@ -1,12 +1,18 @@
 <script setup>
 import {reactive, ref} from "vue";
+import AModalSuccess from "@/components/core/AModalSuccess.vue";
 
 let activeStep = ref(2)
 let numOfAdult = ref(0)
 let numOfChild = ref(0)
 let numOfBaby = ref(0)
+let showAModalSuccess = ref(false)
 const handleNextStep = () => {
   activeStep.value = 3;
+  showAModalSuccess.value = true;
+}
+const closeDialog = () => {
+  showAModalSuccess.value = false
 }
 const typeOfInput = {
   NUM_OF_ADULT: "numOfAdult",
@@ -278,13 +284,15 @@ const decreaseValue = (decreaseField) => {
                 variant="outlined"
                 label="Tên của bạn*"
                 prepend-inner-icon="mdi-account-group"
+                :rules="['Required']"
               ></v-text-field>
             </div>
             <div>
               <v-text-field
                 variant="outlined"
-                label="Số điện thoại"
+                label="Số điện thoại*"
                 prepend-inner-icon="mdi-phone-outline"
+                :rules="['Required']"
               ></v-text-field>
             </div>
             <div>
@@ -292,6 +300,7 @@ const decreaseValue = (decreaseField) => {
                 variant="outlined"
                 label="Email*"
                 prepend-inner-icon="mdi-email-outline"
+                :rules="['Required']"
               ></v-text-field>
             </div>
             <div>
@@ -355,6 +364,7 @@ const decreaseValue = (decreaseField) => {
       </div>
     </a-stepper>
   </div>
+  <a-modal-success :showAModalSuccess="showAModalSuccess" :closeDialog="closeDialog"/>
 </template>
 
 <style scoped>
