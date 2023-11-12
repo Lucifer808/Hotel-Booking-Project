@@ -8,6 +8,7 @@ import AInfoCard from "@/components/core/AInfoCard";
 import AFooter from "@/components/core/AFooter";
 import AStepper from "@/components/core/AStepper";
 import AModalSuccess from "@/components/core/AModalSuccess";
+import ACarouselDetail from "@/components/core/ACarouselDetail";
 
 export default {
   ANavBar,
@@ -19,5 +20,6 @@ export default {
   AInfoCard,
   AFooter,
   AStepper,
-  AModalSuccess
+  AModalSuccess,
+  ACarouselDetail
 }

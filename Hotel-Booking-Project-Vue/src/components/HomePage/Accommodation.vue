@@ -221,7 +221,6 @@ import 'swiper/css/navigation';
 import {Parallax, Pagination, Navigation} from 'swiper/modules';
 import ASocialCarousel from "@/components/core/ASocialCarousel.vue";
 import AInfoCard from "@/components/core/AInfoCard.vue";
-import AFooter from "@/components/core/AFooter.vue";
 
 export default {
   components: {

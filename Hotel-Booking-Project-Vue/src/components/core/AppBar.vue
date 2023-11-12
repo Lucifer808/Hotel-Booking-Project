@@ -4,7 +4,7 @@
       <img class="logo-customize" src="../../assets/images/minh_loan_hotel.jpg"/>
     </div>
     <ul>
-      <li><a class="nav-bar-item" href="#">Trang Chủ</a>
+      <li><a class="nav-bar-item" href="/">Trang Chủ</a>
       </li>
       <li>
         <div class="dropdown">

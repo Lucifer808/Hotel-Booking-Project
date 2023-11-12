@@ -60,7 +60,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .a-carousel-container {
   position: relative;
   display: flex;
