@@ -13,6 +13,10 @@ const routes = [
   {
     path: '/room-booking',
     component: () => import('@/views/RoomBooking.vue')
+  },
+  {
+    path: '/auth',
+    component: () => import('@/views/AuthenticationForm.vue')
   }
 ]
 
